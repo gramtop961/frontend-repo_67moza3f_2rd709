@@ -1,9 +1,48 @@
 
-> vibe-generated-app@1.0.0 dev
-> vite
+> dev
+> nuxt dev -o
 
+[nuxi] Nuxt 3.20.1 (with Nitro 2.12.9, Vite 7.2.4 and Vue 3.5.24)
 
-  VITE v5.4.20  ready in 266 ms
+ 
+              █▀▀▀▀▀▀▀█▀██▀▀▀██▀█▀▀▀▀▀▀▀█
+              █ █▀▀▀█ ██▄ █▀▀ ▀ █ █▀▀▀█ █
+              █ █   █ ██▀█▀▄▄▄███ █   █ █
+              █ ▀▀▀▀▀ █▀█ █ ▄ █ █ ▀▀▀▀▀ █
+              █▀▀█▀▀█▀█▄▀  █▄█▄ █▀█████▀█
+              █ ▀▄  █▀ ▀▄▀▀▄ ▀   ▀▀▄ ▄▄▀█
+              █▄ ▀  ▄▀▀▀ ▄  █▀▀▄ ▀▄█▄▄▄ █
+              █ ▀▀▄▀ ▀▀███▀▀▄█ ▀▀█▄▄▀▀ ▀█
+              █ █▀▀█▀▀█ ██▄▀▀▀▄▀▀▀▀ █ ▀▄█
+              █▀▀▀▀▀▀▀█▄▀█ ▄▀ █ █▀█ ▀█▄▀█
+              █ █▀▀▀█ █▀▀▀ ▀▄▄▀ ▀▀▀ ▀█▄▄█
+              █ █   █ █▄█▀  █▀▀▄█▄▄▀▄▀  █
+              █ ▀▀▀▀▀ █ ▀█ ▄█▀ ▀ ▄▄▄▀▄▄ █
+              ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+ 
+  ➜ Local:    http://0.0.0.0:3000/
+  ➜ Network:  http://172.20.1.137:3000/ [QR code]
 
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.20.1.137:3000/
+[nuxt:tailwindcss] ℹ Using Tailwind CSS from ~/assets/css/tailwind.css
+  ➜ DevTools: press Shift + Alt + D in the browser (v3.1.0)
+
+✔ Vite client built in 69ms
+✔ Vite server built in 1085ms
+[nitro] ✔ Nuxt Nitro server built in 993ms
+ℹ Vite server warmed up in 1ms
+ℹ Vite client warmed up in 3ms
+
+[nuxt]  WARN  Found multiple external configuration files: 
+
+- Using vite.config.js is not supported together with Nuxt. Use options.vite instead. You can read more in https://nuxt.com/docs/api/nuxt-config#vite.
+- Using postcss.config.js is not supported together with Nuxt. Use options.postcss instead. You can read more in https://nuxt.com/docs/api/nuxt-config#postcss.
+
+✔ Vite server hmr 1 files in 799.319ms
+✔ Vite server hmr 1 files in 0.003ms
+✔ Vite server hmr 1 files in 0.002ms
+✔ Vite server hmr 1 files in 0.004ms
+✔ Vite server hmr 1 files in 0.004ms
+✔ Vite server hmr 1 files in 0.004ms
+✔ Vite server hmr 1 files in 0.004ms
+✔ Vite server hmr 1 files in 0.004ms
+✔ Vite server hmr 1 files in 0.004ms

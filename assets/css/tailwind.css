@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font + color base */
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-blackqoral-black text-blackqoral-cream font-poppins selection:bg-blackqoral-cream selection:text-blackqoral-black;
+  }
+  a {
+    @apply underline-offset-4 decoration-blackqoral-cream/20 hover:decoration-blackqoral-cream transition;
+  }
+}
+
+/* Utilities for glass morphic cards */
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-blackqoral-cream/20 shadow-glass;
+  }
+  .hairline {
+    @apply border border-blackqoral-cream/20;
+  }
+}

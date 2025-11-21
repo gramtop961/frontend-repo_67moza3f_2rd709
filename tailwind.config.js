@@ -1,52 +1,28 @@
+/* Tailwind config for Black Qoral with custom palette and Typography */
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: 'class',
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './components/**/*.{vue,js,ts}',
+    './layouts/**/*.{vue,js,ts}',
+    './pages/**/*.{vue,js,ts}',
+    './app.vue'
   ],
   theme: {
     extend: {
+      colors: {
+        'blackqoral-black': '#0b0b0c',
+        'blackqoral-cream': '#f5e9d4',
+        'blackqoral-cream-weak': 'rgba(245, 233, 212, 0.18)'
+      },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-        geist: ['Geist', 'system-ui', 'sans-serif'],
-        'geist-mono': ['Geist Mono', 'monospace'],
-        mona: ['Mona Sans', 'system-ui', 'sans-serif'],
-        'ibm-plex': ['IBM Plex Sans', 'system-ui', 'sans-serif'],
-        manrope: ['Manrope', 'system-ui', 'sans-serif'],
+        poppins: ['Poppins', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif']
       },
-      animation: {
-        'fade-in': 'fadeIn 0.5s ease-in-out',
-        'fade-out': 'fadeOut 0.5s ease-in-out',
-        'slide-in': 'slideIn 0.3s ease-out',
-        'slide-up': 'slideUp 0.3s ease-out',
-        'bounce-in': 'bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-        'spin-slow': 'spin 3s linear infinite',
-      },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
-        fadeOut: {
-          '0%': { opacity: '1' },
-          '100%': { opacity: '0' },
-        },
-        slideIn: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(100%)' },
-          '100%': { transform: 'translateY(0)' },
-        },
-        bounceIn: {
-          '0%': { opacity: '0', transform: 'scale(0.3)' },
-          '50%': { transform: 'scale(1.05)' },
-          '70%': { transform: 'scale(0.9)' },
-          '100%': { opacity: '1', transform: 'scale(1)' },
-        },
-      },
-    },
+      boxShadow: {
+        'soft-lg': '0 8px 28px rgba(0,0,0,0.35)',
+        'glass': 'inset 0 1px 0 rgba(255,255,255,0.06), 0 8px 24px rgba(0,0,0,0.35)'
+      }
+    }
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')]
 }
